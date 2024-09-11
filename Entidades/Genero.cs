@@ -1,4 +1,5 @@
 ﻿using peliculasWebApi.Validaciones;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace peliculasWebApi.Entidades
@@ -12,13 +13,7 @@ namespace peliculasWebApi.Entidades
         [PrimeraLetraMayuscula]
         public string Nombre { get; set; }
 
-<<<<<<< HEAD
         public List<PeliculasGeneros> PeliculasGeneros { get; set; }
     }
 }
 
-=======
-        
-    }
-}
->>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea

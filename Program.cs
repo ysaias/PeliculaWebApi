@@ -1,5 +1,3 @@
-
-<<<<<<< HEAD
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -13,12 +11,6 @@ using peliculasWebApi.Filtro;
 using peliculasWebApi.Utilidades;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
-=======
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
-using peliculasWebApi;
-using peliculasWebApi.Filtro;
->>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
 
 
 
@@ -27,7 +19,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 // Add services to the container.
-<<<<<<< HEAD
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
 
@@ -78,31 +69,16 @@ builder.Services.AddControllers(options =>
     options.Filters.Add(typeof(FiltroDeExcepcion));
     options.Filters.Add(typeof(ParsearBadRequets));
 }).ConfigureApiBehaviorOptions(BehaviorBadRequests.Parsear);
-=======
-
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection")));
-
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
-builder.Services.AddControllers( options =>
-{
-    options.Filters.Add(typeof(FiltroDeExcepcion));
-});
->>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
 
 builder.Services.AddCors(options =>
 {
     var frontendURL = builder.Configuration.GetValue<string>("frontend_url");
     options.AddDefaultPolicy(builder =>
     {
-<<<<<<< HEAD
         builder.WithOrigins(frontendURL)
                .AllowAnyMethod()
                .AllowAnyHeader()
                .WithExposedHeaders(new string[] { "cantidadtotalregistros" });
-=======
-        builder.WithOrigins(frontendURL).AllowAnyMethod().AllowAnyHeader();
->>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
     });
 });
 
@@ -110,14 +86,11 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-<<<<<<< HEAD
 builder.Services.AddApplicationInsightsTelemetry(new Microsoft.ApplicationInsights.AspNetCore.Extensions.ApplicationInsightsServiceOptions
 {
     ConnectionString = builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]
 });
 
-=======
->>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

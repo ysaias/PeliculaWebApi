@@ -1,24 +1,15 @@
-<<<<<<< HEAD
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-=======
-﻿using Microsoft.EntityFrameworkCore;
->>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
 using peliculasWebApi.Entidades;
 
 namespace peliculasWebApi
 {
-<<<<<<< HEAD
     public class ApplicationDbContext : IdentityDbContext
-=======
-    public class ApplicationDbContext : DbContext
->>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
     {
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
         }
 
-<<<<<<< HEAD
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<PeliculasActores>()
@@ -45,8 +36,5 @@ namespace peliculasWebApi
 
 
 
-=======
-        public DbSet<Genero> Generos { get; set; }
->>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
     }
 }
