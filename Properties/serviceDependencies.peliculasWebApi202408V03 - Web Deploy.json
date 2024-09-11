@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/peliculasWebApi202408V03/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsdefaultConnection_1DEEEF8A11",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/peliculaswebapidbserver/databases/peliculasWebApi_db_v02",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:defaultConnection",
+      "dynamicId": null
+    },
+    "secrets1": {
+      "ignored": "true",
+      "type": "secrets"
+    },
+    "storage1": {
+      "ignored": "true",
+      "type": "storage",
+      "connectionId": "ConnectionStrings:AzureStorage"
+    },
+    "appInsights1": {
+      "ignored": "true",
+      "type": "appInsights",
+      "connectionId": "APPLICATIONINSIGHTS_CONNECTION_STRING",
+      "dynamicId": null
+    },
+    "apis2": {
+      "ignored": "true",
+      "type": "apis.azure"
+    },
+    "identityapp1": {
+      "ignored": "true",
+      "type": "identityapp"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "storage1": {
+      "ignored": "true",
+      "type": "storage",
+      "connectionId": "ConnectionStrings:AzureStorage"
+    },
+    "identityapp1": {
+      "ignored": "true",
+      "type": "identityapp"
+    },
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/peliculasWebApi202408-v02/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsdefaultConnection_1DEEEF8A11",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/peliculaswebapidbserver/databases/peliculasWebApi_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:defaultConnection"
+    },
+    "apis1": {
+      "apiEndpoint": "https://peliculaswebapiapimanagement.azure-api.net/",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/peliculasWebApiapiManagement/apis/peliculasWebApi",
+      "type": "apis.azure"
+    }
+  }
+}
