@@ -2,7 +2,11 @@
 
 namespace peliculasWebApi.Validaciones
 {
+<<<<<<< HEAD
     public class PrimeraLetraMayuscula : ValidationAttribute
+=======
+    public class PrimeraLetraMayuscula: ValidationAttribute
+>>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
     {
         protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
         {

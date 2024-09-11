@@ -18,7 +18,11 @@ namespace peliculasWebApi.ApiBehavior
                 }
                 return new BadRequestObjectResult(respuesta);
             };
+<<<<<<< HEAD
 
+=======
+           
+>>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
         }
     }
 }

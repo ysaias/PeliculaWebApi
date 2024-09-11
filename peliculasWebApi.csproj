@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+<<<<<<< HEAD
     <ApplicationInsightsResourceId>/subscriptions/b5ffe300-e839-4bf3-83c7-dfb1457e0a63/resourceGroups/PeliculasApi/providers/microsoft.insights/components/peliculasWebApiV02</ApplicationInsightsResourceId>
     <UserSecretsId>85fdd5ae-5dd7-4bc7-bc43-7c8e9b1c5900</UserSecretsId>
   </PropertyGroup>
@@ -17,13 +18,24 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite" Version="8.0.7" />
+=======
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+>>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+<<<<<<< HEAD
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="System.Formats.Asn1" Version="6.0.1" />
+=======
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+>>>>>>> 2af95bc638e0cb8dfd888ba82555fb6ab1b34aea
   </ItemGroup>
 
 </Project>
